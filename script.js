@@ -1,7 +1,7 @@
 document.getElementById("searchBtn").addEventListener("click",display);
 async function display(){
     const cityName = document.getElementById("cityInput").value;
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=0fa96dae7c2cdce3f922a3423dd92113&units=metric`);
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=YOUR_API_HERE&units=metric`);
     const data = await response.json();
     console.log(data);
     const cityNameElement = document.getElementById("cityName");
